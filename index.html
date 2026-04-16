@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arm Wrestling Equipment</title>
+    <style>
+        :root {
+            --primary-color: #00A9E0; /* Голубий */
+            --secondary-color: #ffffff; /* Білий */
+            --text-color: #333333;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f1f1f1;
+        }
+
+        nav a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .page {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arm Wrestling Equipment Store</h1>
+        <p>Specialized equipment for arm wrestling training and competitions</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#about">About Us</a>
+        <a href="#sale">Sale</a>
+        <a href="#delivery">Delivery</a>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="page">
+            <h2>Welcome to Our Store</h2>
+            <p>We offer a wide range of arm wrestling handles, tables, and training equipment available in Ukraine and Poland.</p>
+        </div>
+
+        <div id="catalog" class="page">
+            <h2>Catalog</h2>
+            <p>Browse our selection of arm wrestling equipment:</p>
+            <ul>
+                <li>Arm wrestling handles</li>
+                <li>Arm wrestling tables</li>
+                <li>Training tools</li>
+            </ul>
+        </div>
+
+        <div id="about" class="page">
+            <h2>About Us</h2>
+            <p>We are a company focused on providing top-quality equipment for arm wrestling training and competition. Our mission is to deliver durable and reliable products for athletes in Ukraine and Poland.</p>
+        </div>
+
+        <div id="sale" class="page">
+            <h2>Sale</h2>
+            <p>Check out our special offers and discounts on arm wrestling equipment.</p>
+        </div>
+
+        <div id="delivery" class="page">
+            <h2>Delivery</h2>
+            <p>We offer fast and secure delivery to Ukraine and Poland. Contact us for more details on delivery options.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Arm Wrestling Equipment Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for switching languages (this could be more dynamic in a real implementation)
+        function switchLanguage(lang) {
+            if (lang === 'pl') {
+                document.querySelector('header h1').textContent = 'Sklep z wyposażeniem do armwrestlingu';
+                document.querySelector('#home h2').textContent = 'Witamy w naszym sklepie';
+                document.querySelector('#catalog h2').textContent = 'Katalog';
+                document.querySelector('#about h2').textContent = 'O nas';
+                document.querySelector('#sale h2').textContent = 'Wyprzedaż';
+                document.querySelector('#delivery h2').textContent = 'Dostawa';
+            } else {
+                document.querySelector('header h1').textContent = 'Arm Wrestling Equipment Store';
+                document.querySelector('#home h2').textContent = 'Welcome to Our Store';
+                document.querySelector('#catalog h2').textContent = 'Catalog';
+                document.querySelector('#about h2').textContent = 'About Us';
+                document.querySelector('#sale h2').textContent = 'Sale';
+                document.querySelector('#delivery h2').textContent = 'Delivery';
+            }
+        }
+    </script>
+</body>
+</html>
