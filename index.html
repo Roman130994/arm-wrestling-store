@@ -1,146 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arm Wrestling Equipment</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        :root {
-            --primary-color: #00A9E0; /* Голубий */
-            --secondary-color: #ffffff; /* Білий */
-            --text-color: #333333;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--secondary-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #f1f1f1;
-        }
-
-        nav a {
-            padding: 10px 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        nav a:hover {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        .page {
-            padding: 20px;
-            margin: 20px 0;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbyt Equipment | Магазин для армреслінгу</title>
+  <meta name="description" content="Hobbyt Equipment — інтернет-магазин товарів для армреслінгу: ручки, столи, тренажери та аксесуари.">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Arm Wrestling Equipment Store</h1>
-        <p>Specialized equipment for arm wrestling training and competitions</p>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#catalog">Catalog</a>
-        <a href="#about">About Us</a>
-        <a href="#sale">Sale</a>
-        <a href="#delivery">Delivery</a>
-    </nav>
-
-    <div class="container">
-        <div id="home" class="page">
-            <h2>Welcome to Our Store</h2>
-            <p>We offer a wide range of arm wrestling handles, tables, and training equipment available in Ukraine and Poland.</p>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">HE</div>
+        <div class="brand-text">
+          <strong>Hobbyt Equipment</strong>
+          <span>Armwrestling gear store</span>
         </div>
+      </a>
 
-        <div id="catalog" class="page">
-            <h2>Catalog</h2>
-            <p>Browse our selection of arm wrestling equipment:</p>
-            <ul>
-                <li>Arm wrestling handles</li>
-                <li>Arm wrestling tables</li>
-                <li>Training tools</li>
-            </ul>
-        </div>
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" data-nav-toggle>☰</button>
 
-        <div id="about" class="page">
-            <h2>About Us</h2>
-            <p>We are a company focused on providing top-quality equipment for arm wrestling training and competition. Our mission is to deliver durable and reliable products for athletes in Ukraine and Poland.</p>
-        </div>
-
-        <div id="sale" class="page">
-            <h2>Sale</h2>
-            <p>Check out our special offers and discounts on arm wrestling equipment.</p>
-        </div>
-
-        <div id="delivery" class="page">
-            <h2>Delivery</h2>
-            <p>We offer fast and secure delivery to Ukraine and Poland. Contact us for more details on delivery options.</p>
-        </div>
+      <nav class="site-nav" data-nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Головна</a>
+            <div class="dropdown-menu">
+              <a href="#about">Про магазин</a>
+              <a href="#featured">Популярні товари</a>
+              <a href="#benefits">Переваги</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Каталог</a>
+            <div class="dropdown-menu">
+              <a href="catalog.html#handles">Ручки</a>
+              <a href="catalog.html#tables">Столи</a>
+              <a href="catalog.html#trainers">Тренажери</a>
+              <a href="catalog.html#accessories">Аксесуари</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="delivery.html">Доставка &amp; Оплата</a>
+            <div class="dropdown-menu">
+              <a href="delivery.html#shipping">Умови доставки</a>
+              <a href="delivery.html#payment">Способи оплати</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Кошик <span class="pill" data-cart-count>0</span></a>
+            <div class="dropdown-menu">
+              <a href="cart.html">Перейти в кошик</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorites.html">Улюблене <span class="pill" data-favorite-count>0</span></a>
+            <div class="dropdown-menu">
+              <a href="favorites.html">Збережені товари</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2026 Arm Wrestling Equipment Store. All rights reserved.</p>
-    </footer>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy" id="about">
+          <span class="eyebrow">Сила, техніка, контроль</span>
+          <h1>Обладнання для армреслінгу, яке витримує серйозну підготовку</h1>
+          <p>Hobbyt Equipment — це спеціалізований магазин для рукоборців, клубів і домашніх залів. Ми зібрали ручки, столи, тренажери та аксесуари, які допомагають будувати силу хвата, пронацію, cup і стабільність руки.</p>
+          <div class="hero-actions">
+            <a class="btn" href="catalog.html">Перейти до каталогу</a>
+            <a class="btn-secondary" href="delivery.html">Доставка та оплата</a>
+          </div>
+        </div>
 
-    <script>
-        // JavaScript for switching languages (this could be more dynamic in a real implementation)
-        function switchLanguage(lang) {
-            if (lang === 'pl') {
-                document.querySelector('header h1').textContent = 'Sklep z wyposażeniem do armwrestlingu';
-                document.querySelector('#home h2').textContent = 'Witamy w naszym sklepie';
-                document.querySelector('#catalog h2').textContent = 'Katalog';
-                document.querySelector('#about h2').textContent = 'O nas';
-                document.querySelector('#sale h2').textContent = 'Wyprzedaż';
-                document.querySelector('#delivery h2').textContent = 'Dostawa';
-            } else {
-                document.querySelector('header h1').textContent = 'Arm Wrestling Equipment Store';
-                document.querySelector('#home h2').textContent = 'Welcome to Our Store';
-                document.querySelector('#catalog h2').textContent = 'Catalog';
-                document.querySelector('#about h2').textContent = 'About Us';
-                document.querySelector('#sale h2').textContent = 'Sale';
-                document.querySelector('#delivery h2').textContent = 'Delivery';
-            }
-        }
-    </script>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20800%20500%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230f3b57%22/%3E%3Cstop%20offset%3D%2255%25%22%20stop-color%3D%22%232aa5f4%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23b4efff%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20rx%3D%2236%22%20fill%3D%22url(%23bg)%22/%3E%3Ccircle%20cx%3D%22630%22%20cy%3D%22110%22%20r%3D%2292%22%20fill%3D%22rgba(255%2C255%2C255%2C0.18)%22/%3E%3Ccircle%20cx%3D%22165%22%20cy%3D%22380%22%20r%3D%2275%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22/%3E%3Crect%20x%3D%22150%22%20y%3D%22155%22%20width%3D%22490%22%20height%3D%22170%22%20rx%3D%2236%22%20fill%3D%22rgba(255%2C255%2C255%2C0.18)%22/%3E%3Ctext%20x%3D%22188%22%20y%3D%22125%22%20font-family%3D%22Verdana%2C%20sans-serif%22%20font-size%3D%2244%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3EHobbyt%20Equipment%3C/text%3E%3Ctext%20x%3D%22188%22%20y%3D%22225%22%20font-family%3D%22Verdana%2C%20sans-serif%22%20font-size%3D%2230%22%20fill%3D%22white%22%3EEquipment%20for%20armwrestling%20training%3C/text%3E%3Ctext%20x%3D%22188%22%20y%3D%22285%22%20font-family%3D%22Verdana%2C%20sans-serif%22%20font-size%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.9)%22%3EReliable%20gear%20for%20home%2C%20club%20and%20competition%3C/text%3E%3C/svg%3E" alt="Банер Hobbyt Equipment">
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <strong>4</strong>
+                <span>категорії товарів</span>
+              </div>
+              <div class="hero-stat">
+                <strong>UA + PL</strong>
+                <span>доставка в дві країни</span>
+              </div>
+              <div class="hero-stat">
+                <strong>24/7</strong>
+                <span>онлайн-каталог</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Популярні позиції</span>
+            <h2>Ручки, столи та тренажери для прогресу</h2>
+            <p>Кілька стартових товарів для клубу або домашньої підготовки.</p>
+          </div>
+          <a class="btn-ghost" href="catalog.html">Відкрити весь каталог</a>
+        </div>
+
+        <div class="grid grid-3" data-featured-products></div>
+      </div>
+    </section>
+
+    <section class="section" id="benefits">
+      <div class="container info-grid">
+        <article class="info-card">
+          <h3>Спеціалізація на армреслінгу</h3>
+          <p>Кожен товар підібрано під типові потреби рукоборців: сила хвата, пронація, контроль кисті та точна імітація рухів за столом.</p>
+        </article>
+        <article class="info-card">
+          <h3>Для дому і клубу</h3>
+          <p>У каталозі є як компактні рішення для домашнього залу, так і серйозні моделі для секцій, клубів та змагальних спарингів.</p>
+        </article>
+        <article class="info-card">
+          <h3>Швидке збереження товарів</h3>
+          <p>Кошик і улюблене працюють через <code>localStorage</code>, тому вибрані товари залишаються навіть після перезавантаження сторінки.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Hobbyt Equipment</span>
+      <span>Інтернет-магазин для армреслінгу на GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
