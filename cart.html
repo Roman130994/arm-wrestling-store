@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кошик | Hobbyt Equipment</title>
+  <meta name="description" content="Кошик інтернет-магазину Hobbyt Equipment.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">HE</div>
+        <div class="brand-text">
+          <strong>Hobbyt Equipment</strong>
+          <span>Armwrestling gear store</span>
+        </div>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" data-nav-toggle>☰</button>
+      <nav class="site-nav" data-nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Головна</a>
+            <div class="dropdown-menu">
+              <a href="index.html#featured">Популярні товари</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Каталог</a>
+            <div class="dropdown-menu">
+              <a href="catalog.html#handles">Ручки</a>
+              <a href="catalog.html#tables">Столи</a>
+              <a href="catalog.html#trainers">Тренажери</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="delivery.html">Доставка &amp; Оплата</a>
+            <div class="dropdown-menu">
+              <a href="delivery.html#shipping">Доставка</a>
+              <a href="delivery.html#payment">Оплата</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="cart.html">Кошик <span class="pill" data-cart-count>0</span></a>
+            <div class="dropdown-menu">
+              <a href="cart.html">Ваші товари</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorites.html">Улюблене <span class="pill" data-favorite-count>0</span></a>
+            <div class="dropdown-menu">
+              <a href="favorites.html">Збережені товари</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Кошик</span>
+        <h1>Перевірте вибрані товари перед оформленням</h1>
+        <p class="lead">Тут зберігаються всі додані позиції. Кількість можна змінювати, а підсумкова сума перераховується автоматично.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cart-layout">
+        <div class="cart-items" data-cart-items></div>
+        <div data-cart-summary></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Hobbyt Equipment</span>
+      <span>Безпечне збереження кошика у браузері</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
