@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог | Hobbyt Equipment</title>
+  <meta name="description" content="Каталог товарів Hobbyt Equipment: ручки, столи, тренажери та аксесуари для армреслінгу.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="catalog">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">HE</div>
+        <div class="brand-text">
+          <strong>Hobbyt Equipment</strong>
+          <span>Armwrestling gear store</span>
+        </div>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" data-nav-toggle>☰</button>
+      <nav class="site-nav" data-nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Головна</a>
+            <div class="dropdown-menu">
+              <a href="index.html#about">Про магазин</a>
+              <a href="index.html#featured">Популярні товари</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="catalog.html">Каталог</a>
+            <div class="dropdown-menu">
+              <a href="#handles">Ручки</a>
+              <a href="#tables">Столи</a>
+              <a href="#trainers">Тренажери</a>
+              <a href="#accessories">Аксесуари</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="delivery.html">Доставка &amp; Оплата</a>
+            <div class="dropdown-menu">
+              <a href="delivery.html#shipping">Умови доставки</a>
+              <a href="delivery.html#payment">Оплата</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Кошик <span class="pill" data-cart-count>0</span></a>
+            <div class="dropdown-menu">
+              <a href="cart.html">Перейти до кошика</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorites.html">Улюблене <span class="pill" data-favorite-count>0</span></a>
+            <div class="dropdown-menu">
+              <a href="favorites.html">Збережені товари</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Каталог</span>
+        <h1>Обирайте спорядження під свій стиль боротьби</h1>
+        <p class="lead">У каталозі зібрані гіпотетичні товари для рукоборців: ручки для тяги, столи для тренувань, спеціалізовані тренажери та корисні аксесуари.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container categories-layout">
+        <aside class="category-panel">
+          <h3>Категорії товарів</h3>
+          <div class="category-links">
+            <a href="#handles"><span>Ручки</span><strong>→</strong></a>
+            <a href="#tables"><span>Столи</span><strong>→</strong></a>
+            <a href="#trainers"><span>Тренажери</span><strong>→</strong></a>
+            <a href="#accessories"><span>Аксесуари</span><strong>→</strong></a>
+          </div>
+        </aside>
+
+        <div class="panel" data-catalog-content></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Hobbyt Equipment</span>
+      <span>Тренуйтесь цілеспрямовано та з комфортом</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
